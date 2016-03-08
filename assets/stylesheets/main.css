@@ -1,0 +1,150 @@
+body {
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 100px;
+  margin: 25px 25px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  max-width: 40rem;
+  margin: auto 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Index*/
+
+.result {
+  width: 20rem;
+  height: 20rem;
+}
+
+.enter {
+  background-color: red;
+}
+.participate {
+  background-color: green;
+}
+
+/*Index*/
+
+#patron li {
+  display: flex;
+  flex-direction: row;
+}
+
+#patron hgroup {
+  margin-left: 3rem;
+}
+
+#patron h3 {
+
+}
+
+#patron > p {
+
+}
+
+#board li {
+  display: flex;
+  flex-direction: row;
+}
+
+#board hgroup {
+  margin-left: 3rem;
+  width: 12rem;
+}
+
+#board > h3 {
+
+}
+
+#board > p {
+
+}
+
+/*Collapsible List*/
+.collapsible-list li > input + * {
+ display: none;
+}
+
+.collapsible-list li > input:checked + * {
+ display: block;
+}
+
+.collapsible-list li > input {
+ display: none;
+}
+
+.collapsible-list label {
+ cursor: pointer;
+}
+
+input:checked ~ ul {
+  background: url("../images/icons/arrow-open.svg") 1rem 0 no-repeat;
+}
+
+input ~ ul {
+  background: url("../images/icons/arrow-closed.svg") 1rem 0 no-repeat;
+}
+
+
+/*End Collapsible List*/
+
+footer {
+  height: 460px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;;
+}
+
+footer section {
+  max-width: 40rem;
+  margin-right: 10rem;
+}
+
+footer img {
+  width: 25px;
+  margin: 0 2px;
+}
+
+@media screen and (min-width: 980px) {
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+}
+
+  #close-menu {
+      display: none;
+  }
+}
