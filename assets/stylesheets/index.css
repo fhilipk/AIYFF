@@ -1,0 +1,52 @@
+@media screen and (min-width: 980px) {
+
+  #user-action {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .result {
+    width: 30rem;
+    height: 30rem;
+    padding: 3rem;
+  }
+
+  .result:hover {
+    width: 50rem;
+  }
+
+  .enter {
+    background-color: lightblue;
+  }
+  .participate {
+    /*background-color: lightgreen;*/
+  }
+
+  #user-action {
+    display: flex;
+    flex-direction: column;;
+  }
+
+  .participate {
+    transition: width 2s;
+    background-image: url("../images/participate.jpg");
+    color: white;
+  }
+
+  .participate:hover {
+    width: 50rem;
+  }
+
+  .enter {
+    transition: width 2s;
+    background-image: url("../images/enter.jpg");
+    color: white;
+  }
+
+  .enter:hover {
+    width: 50rem;
+  }
+
+  .enter:hover .participate {
+    width: 10rem;
+  }

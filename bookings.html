@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="adelaide, international, youth, kids, film, festival, AIYFF, AKFF">
+    <link rel="stylesheet" href="assets/stylesheets/normalize.css" media="screen">
+    <link rel="stylesheet" href="assets/stylesheets/main.css" media="screen">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <title>AIYFF - Style Guide</title>
+  </head>
+  <body>
+      <main>
+        <header>
+          <a href="index.html"><img src="assets/images/AIYFF - V2.png" alt="Adealide International Youth Film Festival" /></a>
+          <div id="nav-menu">
+            <div>
+              <img id="menu-icon" class="toggle-menu" src="assets/images/icons/menu-icon.svg" alt="Menu Icon">
+            </div>
+            <nav class="slideout-menu">
+              <!-- <p id="close-menu" class="toggle-menu">Close X</p> -->
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="bookings.html">Book</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="container">
+          <section>
+            <h1>Booking</h1>
+            <a class="link-outline call-to-action center" href="#bookingModal">Make a booking</a>
+            <ul id="accreditation-options">
+              <li id="youth-price" class="price-box">
+                <h2>Youth</h2>
+                <h3>$30</h3>
+                <p>
+                  A youth is anyone 25 years old and under.
+                </p>
+              </li>
+              <li id="adult-price" class="price-box">
+                <h2>Adult</h2>
+                <h3>$35</h3>
+                <p>
+                  Everyone else.
+                </p>
+              </li>
+              <li id="group-price" class="price-box">
+                <h2>Group</h2>
+                <h3>$20</h3>
+                <p>
+                  Group prices are avaliable where one or more adults accompanies five or more youths. An example would be a teacher bringing their class to the event.
+                </p>
+              </li>
+            <ul>
+          </section>
+          <section>
+            <h3>What is accredition?</h3>
+            <p>
+              Cultural accreditation is aviable to indivitals such as teachers, students, cultural associations, organizations, Universities etc. The Cultural Accreditation allows access to the Festival events and screenings for the duration of the event.
+            </p>
+            <p>
+              If you are a member of the press or recognised in the industry please <a href="#">contact us</a> for details of the
+            </p>
+          </section>
+        </div>
+
+    <div id="bookingModal" class="modalDialog">
+      <div class="">
+    		<a href="#close" title="Close" class="close-modal">X</a>
+        <form action="payment.html" method="post" oninput="">
+          <h2>Attend the Festival</h2>
+          <label>
+            <span>First name</span>
+            <input type="text" name="firstname" placeholder="First name"/>
+          </label>
+          <label for="surname">Surname name</label>
+          <input type="text" name="surnameName" placeholder="Surname name"/>
+          <label>
+            <span>Email</span>
+            <input type="email" name="emailaddress" placeholder="example@mail.com" />
+          </label>
+          <label>
+            <span>Phone</span>
+            <input type="tel" name="phonenumber" />
+          </label>
+          <label>
+            <span>Youth attendees</span>
+            <input type="number" min="0" name="youthattendees" />
+          </label>
+          <label>
+            <span>Adult attendees</span>
+            <input type="number"name="adultattendees" />
+          </label>
+          <input type="submit" value="Make Payment"></input>
+          <a href="#close">Cancel</a>
+<!--
+          <input type="number" name="adultprice" value="35">
+          <input type="number" name="youthprice" value="30">
+          <output name="Total cost"></output> -->
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <section>
+      <a href="#"><img src="assets/images/icons//webicon-facebook.svg" alt="facebook" /></a>
+      <a href="#"><img src="assets/images/icons/webicon-flickr.svg" alt="flickr" /></a>
+      <a href="#"><img src="assets/images/icons/webicon-googleplus.svg" alt="google plus" /></a>
+      <a href="#"><img src="assets/images/icons/webicon-instagram.svg" alt="instagram" /></a>
+      <a href="#"><img src="assets/images/icons/webicon-twitter.svg" alt="twitter" /></a>
+      <a href="#"><img src="assets/images/icons/webicon-youtube.svg" alt="youtube" /></a>
+    </section>
+  </footer>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  if (typeof jQuery == 'undefined'){
+    console.log("CDN not loading, loading local version of JQuery");
+    document.write(unescape("%3Cscript src='assets/javascripts/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+  </script>
+  <script type="text/javascript" src="assets/javascripts/slide-out-menu.js"> </script>
+  </body>
+</html>
