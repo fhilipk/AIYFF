@@ -1,34 +1,36 @@
 @font-face {
   font-family: 'clemente';
-  src: url('../fonts/clemente_pd/ClementePDaa-Book.ttf') format('truetype');
+  src: url('../fonts/clemente_pd/ClementePDag-Book.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'clemente';
-  src: url('../fonts/clemente_pd/ClementePDaa-BookItalic.ttf') format('truetype');
+  src: url('../fonts/clemente_pd/ClementePDah-BookItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'clemente';
-  src: url('../fonts/clemente_pd/ClementePDaa-Bold.ttf') format('truetype');
+  src: url('../fonts/clemente_pd/ClementePDam-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'clemente';
-  src: url('../fonts/clemente_pd/ClementePDaa-BoldItalic') format('truetype');
+  src: url('../fonts/clemente_pd/ClementePDan-BoldItalic') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
 
 body {
   font-size: 16px;
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: 'clemente', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 em {
@@ -44,10 +46,12 @@ ul {
 }
 
 header {
-  height: 150px;
+  height: 210px;
   display: flex;
   flex-wrap: row;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header > nav > ul {
@@ -89,23 +93,37 @@ nav a:hover {
 
 #menu-icon {
   display: block;
-  width: 3rem;
+  width: 5rem;
+  margin-top: 30px;
 }
 
+#menu-icon .open {
+  display: none;
+}
+
+/*#menu-close > .open {
+  display: none;
+}
+
+#menu-close {
+  display: block;
+  width: 5rem;
+  margin-top: 30px;
+}*/
+
 header img {
-  width: 130px;
-  margin: 25px 25px;
+  width: 300px;
+  margin: 5px 25px;
 }
 
 nav ul {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  margin-right: 50px;
+  align-items: flex-start;
+  margin-right: 10px;
 }
 
 nav li {
-  padding-left: 1rem;
   padding-top: 1rem;
 }
 
@@ -161,7 +179,7 @@ section {
   color: white;
 }
 
-a {
+p > a {
   text-decoration: none;
   color: #ED1942;
   font-size: 1.6rem;
@@ -174,13 +192,15 @@ a:hover {
 .active a {
   font-weight: bold;
   color: #007B8B;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .open {
   display: flex;
-  width: 100%;
-
+  width: 95%;
+  background-color: #E8E8E8;
+  border-radius: 10px;
+  /*border: 1px solid black;*/
 }
 
 menu-icon .open {
@@ -202,16 +222,16 @@ menu-icon .open {
   padding: 3rem;
 }
 
-.result:hover {
+/*.result:hover {
   width: 10rem;
-}
+}*/
 
-.enter {
+/*.enter {
   background-color: lightblue;
 }
 .participate {
   /*background-color: lightgreen;*/
-}
+}*/
 
 #user-action {
   display: flex;
@@ -303,7 +323,7 @@ menu-icon .open {
 /*******************************/
 
 footer {
-  margin: 100px 0 50px;
+  margin: 100px 0 0;
   height: 250px;
   background-color: #311A00;
   display: flex;
@@ -348,6 +368,10 @@ footer img {
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
+  }
+
+  .open {
+    background-color: none;
   }
 
   header > nav > ul {
@@ -400,7 +424,7 @@ footer img {
   }
 
   #list-of-board hgroup {
-    display: none;
+    /*display: none;*/
   }
 
   .box {
@@ -408,11 +432,11 @@ footer img {
   }
 
   #colored-box1{
-    background-color: #00A0B0;
+    background-color: #CF5159;
   }
 
   #colored-box2{
-    background-color: #31963F;
+    background-color: #699F5F;
   }
 
 
@@ -491,7 +515,7 @@ form {
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
     background: #fff;
-    background: linear-gradient(#fff, #999);
+    background: linear-gradient(#49ACBB, #89ECFB);
   }
 
   .close-modal {

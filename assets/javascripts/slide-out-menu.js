@@ -4,9 +4,11 @@ $(document).ready(function () {
     	event.preventDefault();
     	// create menu variables
     	var slideoutMenu = $('.slideout-menu');
+      var menuIcon = $('#menu-icon');
     	var slideoutMenuWidth = $('.slideout-menu').width();
 
     	// toggle open class
+      // menuIcon.toggleClass("open")
     	slideoutMenu.toggleClass("open");
 
     	// slide menu

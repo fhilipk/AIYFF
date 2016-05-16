@@ -5,13 +5,14 @@
     <meta name="keywords" content="adelaide, international, youth, kids, film, festival, AIYFF, AKFF">
     <link rel="stylesheet" href="assets/stylesheets/normalize.css" media="screen">
     <link rel="stylesheet" href="assets/stylesheets/main.css" media="screen">
+    <link rel="stylesheet" href="assets/stylesheets/booking.css" media="screen">
     <link rel="icon" type="image/png" href="assets/images/favicon.ico">
-    <title>AIYFF - Style Guide</title>
+    <title>AIYFF - Book</title>
   </head>
   <body>
       <main>
         <header>
-          <a href="index.html"><img src="assets/images/AIYFF - V2.png" alt="Adealide International Youth Film Festival" /></a>
+          <a href="index.html"><img src="assets/images/AIYFF-logo.png" alt="Adealide International Youth Film Festival" /></a>
           <div id="nav-menu">
             <div>
               <img id="menu-icon" class="toggle-menu" src="assets/images/icons/menu-icon.svg" alt="Menu Icon">
@@ -19,8 +20,8 @@
             <nav class="slideout-menu">
               <!-- <p id="close-menu" class="toggle-menu">Close X</p> -->
               <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="bookings.html">Book</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="bookings.html">Book</a></li>
                 <li><a href="about.html">About</a></li>
               </ul>
             </nav>
@@ -28,39 +29,44 @@
         </header>
         <div class="container">
           <section>
-            <h1>Booking</h1>
-            <a class="link-outline call-to-action center" href="#bookingModal">Make a booking</a>
+            <h1>Book tickets</h1>
             <ul id="accreditation-options">
-              <li id="youth-price" class="price-box">
-                <h2>Youth</h2>
-                <h3>$30</h3>
-                <p>
-                  A youth is anyone 25 years old and under.
-                </p>
-              </li>
-              <li id="adult-price" class="price-box">
-                <h2>Adult</h2>
-                <h3>$35</h3>
-                <p>
-                  Everyone else.
-                </p>
-              </li>
-              <li id="group-price" class="price-box">
-                <h2>Group</h2>
-                <h3>$20</h3>
-                <p>
-                  Group prices are avaliable where one or more adults accompanies five or more youths. An example would be a teacher bringing their class to the event.
-                </p>
-              </li>
+              <a href="#bookingModal">
+                <li id="youth-price" class="price-box">
+                  <h2>Youth</h2>
+                  <h3>$30</h3>
+                  <p>
+                    A youth is anyone 25 years old and under.
+                  </p>
+                </li>
+              </a>
+              <a href="#bookingModal">
+                <li id="adult-price" class="price-box">
+                  <h2>Adult</h2>
+                  <h3>$35</h3>
+                  <p>
+                    An adult accompanying a youth.
+                  </p>
+                </li>
+              </a>
+              <a href="#bookingModal">
+                <li id="group-price" class="price-box">
+                  <h2>Group</h2>
+                  <h3>$20</h3>
+                  <p>
+                    Group prices are avaliable where one or more adults accompanies five or more youths. An example would be a teacher bringing their class to the event.
+                  </p>
+                </li>
+              </a>
             <ul>
           </section>
           <section>
-            <h3>What is accredition?</h3>
+            <h3>Not a youth but want to attend?</h3>
             <p>
-              Cultural accreditation is aviable to indivitals such as teachers, students, cultural associations, organizations, Universities etc. The Cultural Accreditation allows access to the Festival events and screenings for the duration of the event.
+              <strong>Cultural accreditation</strong> is aviable to indivitals such as teachers, students, cultural associations, organizations, Universities etc. The <strong>Cultural Accreditation</strong> allows access to the Festival events and screenings for the duration of the event.
             </p>
             <p>
-              If you are a member of the press or recognised in the industry please <a href="#">contact us</a> for details of the
+              If you are interested in obtaining cultural accreditation <a href="#">contact us</a> for details.
             </p>
           </section>
         </div>
@@ -82,7 +88,7 @@
           </label>
           <label>
             <span>Phone</span>
-            <input type="tel" name="phonenumber" />
+            <input type="tel" name="phonenumber" placeholder="012 345 6789"/>
           </label>
           <label>
             <span>Youth attendees</span>
@@ -92,8 +98,8 @@
             <span>Adult attendees</span>
             <input type="number"name="adultattendees" />
           </label>
-          <input type="submit" value="Make Payment"></input>
-          <a href="#close">Cancel</a>
+          <input id="payment" type="submit" value="Make Booking"></input>
+          <!-- <a href="#close">Cancel</a> -->
 <!--
           <input type="number" name="adultprice" value="35">
           <input type="number" name="youthprice" value="30">
