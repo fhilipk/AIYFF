@@ -1,0 +1,45 @@
+/******************************
+/*Media Queries*/
+/*******************************/
+
+@media screen and (min-width: 980px) {
+  .view img {
+     transition: all 0.2s ease-in;
+  }
+  .view .mask {
+     background-color: rgba(0,0,0,0.6);
+     filter: alpha(opacity=0);
+     opacity: 0;
+     transform: translate(460px, -100px) rotate(180deg);
+     transition: all 0.2s 0.4s ease-in-out;
+  }
+  .view h3 {
+     transform: translateY(-100px);
+     transition: all 0.2s ease-in-out;
+  }
+  .view p {
+     transform: translateX(300px) rotate(90deg);
+     transition: all 0.2s ease-in-out;
+  }
+  .view a.info {
+     transform: translateY(-200px);
+     transition: all 0.2s ease-in-out;
+  }
+  .view:hover .mask {
+     filter: alpha(opacity=100);
+     opacity: 1;
+     transform: translate(0px, 0px);
+  }
+  .view:hover h2 {
+     transform: translateY(0px);
+     transition-delay: 0.5s;
+  }
+  .view:hover p {
+     transform: translateX(0px) rotate(0deg);
+     transition-delay: 0.4s;
+  }
+  .view:hover a.info {
+     transform: translateY(0px);
+     transition-delay: 0.3s;
+  }
+}

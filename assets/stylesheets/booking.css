@@ -1,0 +1,48 @@
+h1 {
+  text-align: center;
+}
+
+a {
+   text-decoration:none;
+}
+
+a > p {
+  style: none;
+}
+
+a > li {
+  width: 9rem;
+  height: 19rem;
+  color: black;
+}
+
+a > li:hover {
+  background-color: #E8E8E8 ;
+  border-color: #49ACBB;
+}
+
+p > a {
+  font-size: 1rem;
+}
+
+input {
+  margin-bottom: .5rem;
+  width: 14rem;
+}
+
+.close-modal:hover {
+  color: black;
+}
+
+#payment {
+  width: 7rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  background-color: #559755;
+  color: white;
+}
+
+@media screen and (min-width: 980px) {
+
+}

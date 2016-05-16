@@ -1,0 +1,51 @@
+img {
+
+}
+
+section > li {
+  display: flex;
+  flex-direction: row;
+}
+
+div.wrapper{
+    display: block;
+}
+
+  div.description{
+    display: block;
+  }
+
+@media screen and (min-width: 980px) {
+
+  /*img {
+    position: relative;
+  }
+
+  #list-of-board hgroup {
+    display: none;
+  }
+
+  #list-of-board:hover {
+    #list-of-board hgroup {
+      display: fixed;
+    }
+  }*/
+
+  div.wrapper{
+      position:relative; /* important(so it can be absolutely position the description div */
+  }
+  div.description{
+      position:absolute; /* absolute position (so it can position where needs to be)*/
+      bottom:5px;
+      left:0px;
+      padding-left: 1rem;
+      display:none; /* hide it */
+      /* styling bellow */
+      background-color:black;
+      color:white;
+  }
+  div.description_content{
+      /*padding:10px;*/
+  }
+
+}
